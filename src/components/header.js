@@ -5,7 +5,7 @@ function Header() {
   useEffect(() => {
     const date = new Date();
     const options = { month: "long", year: "numeric" };
-    setCurrentDate(date.toDateString());
+    setCurrentDate(date.toLocaleDateString(undefined, options));
   }, []);
   return (
     <header>
