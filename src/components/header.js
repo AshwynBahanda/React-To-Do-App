@@ -4,7 +4,7 @@ function Header() {
   const [currentDate, setCurrentDate] = useState("");
   useEffect(() => {
     const date = new Date();
-    const options = { month: "long", year: "numeric" };
+    const options = { day: "numeric", month: "long", year: "numeric" };
     setCurrentDate(date.toLocaleDateString(undefined, options));
   }, []);
   return (
